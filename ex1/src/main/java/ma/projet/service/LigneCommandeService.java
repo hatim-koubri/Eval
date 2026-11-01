@@ -1,0 +1,1 @@
+package ma.projet.service; import ma.projet.classes.LigneCommandeProduit; public class LigneCommandeService extends ServiceBase<LigneCommandeProduit>{public LigneCommandeService(){super(LigneCommandeProduit.class);}}

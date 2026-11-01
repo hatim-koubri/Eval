@@ -1,0 +1,2 @@
+package ma.projet.beans; import jakarta.persistence.*; import java.time.LocalDate; import java.util.*; @Entity @Table(name="femme") public class Femme extends Personne { @OneToMany(mappedBy="femme",cascade=CascadeType.ALL) private List<Mariage> mariages=new ArrayList<>(); public Femme(){} public Femme(String n,String p,String t,String a,LocalDate d){super(n,p,t,a,d);} public List<Mariage> getMariages(){return mariages;} }
+
